@@ -1,9 +1,23 @@
 ---
 layout: post
-title: Introduction
+title: Personendaten über die lobid-API mit der GND abgleichen und anreichern
+
 ---
 
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+Das Hochschulbibliothekszentrum Nordrhein-Westfalen stellt im Rahmen seiner Linked Open Data-Dienste (lobid) auch eine Schnittstelle zur GND (lobid-gnd) zur Verfügung. Neben einer webbasierten Rechercheoberfläche und der Integration in OpenRefine wird auch eine allgemeine Web-API angeboten. Die Datenbasis bilden die RDF-Version der GND und die zusätzlich angereicherten EntityFacts. Serialisiert sind die bereitgestellten Daten in JSON-LD.
+
+In diesem Artikel soll anhand eines einfachen Beispiels die GND über die API von lobid-gnd abgefragt werden. Als Input dient das folgende CSV:
+
+
+{% highlight python %}
+import requests
+response = requests.get("https://api.open-notify.org/astros.json")
+print(response.status_code)
+{% endhighlight %}
+
+Auch Museen stellen ihre Sammlungsdaten zunehmend über maschinenlesbare APIs zur Verfügung. In diesem Artikel soll anhand einfacher Beispiele die Funktionsweise und die Datenstruktur der API des Metropolitan Museum of Art sowie deren Abfrage in Python aufgezeigt werden.
+
+*The Strange Case of Dr. Jekyll and Mr. Fabian* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
 
 -----
 

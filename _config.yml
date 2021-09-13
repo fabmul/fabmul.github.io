@@ -1,7 +1,7 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: Museumssammlungen als Daten
+tagline:
+url: https://fabmul.github.io
 paginate: 1
 baseurl: ""
 permalink: pretty
